@@ -1,0 +1,20 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+
+    @include responsive(75em) {
+        font-size: 50%;
+    }
+
+    @include responsive(62.5em) {
+        font-size: 48%;
+    }
+}

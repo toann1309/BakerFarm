@@ -1,0 +1,110 @@
+/* contact section */
+.contact {
+    &-section {
+        grid-column: full-start / full-end;
+        background-color: #fffaf6;
+        padding: 8rem 0;
+        margin-top: 4rem;
+    }
+
+    &-frame {
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+
+        @include responsive(37.5rem) {
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            margin: 0 auto;
+        }
+    }
+
+    &-info {
+        padding: 5rem;
+        margin-right: 10rem;
+        border: 2px solid $color-agba1;
+        border-radius: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+
+        @include responsive(37.5em) {
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            margin: 0 auto;
+            margin-bottom: 4rem;
+        }
+    }
+
+    &-copy {
+        @include responsive(37.5em) {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+        }
+    }
+
+    &-detail {
+        margin-bottom: 3rem;
+    }
+
+    &__item-link:visited,
+    &__item-link:link {
+        text-decoration: none;
+        font-size: 1.7rem;
+        text-transform: uppercase;
+        color: $color-product-img;
+        font-weight: 700;
+    }
+
+    &-email {
+        color: $color-notification;
+        font-family: $font-heading2;
+        letter-spacing: 1px;
+        margin-bottom: 5rem;
+    }
+
+    &-img {
+        height: 28rem;
+        vertical-align: middle;
+        border-style: none;
+    }
+    
+    &-policy {
+        font-size: 1.5rem;
+        font-weight: 800;
+        margin-left: 3rem;
+        text-transform: uppercase;
+        margin-top: 5rem;
+        font-family: $font-heading2;
+        letter-spacing: 1px;
+
+        @include responsive(37.5em) {
+            margin: 4rem auto;
+        }
+    }
+}
+.mgt {
+    margin-top: 5rem;
+}
+
+.contact-detail li {
+    list-style: none;
+    font-family: $font-heading2;
+    letter-spacing: 1px;
+}

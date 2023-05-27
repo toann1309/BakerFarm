@@ -1,0 +1,66 @@
+.main-section {
+    grid-column: full-start / full-end;
+    height: 90vh;
+    width: 100%;
+    background-image: -webkit-gradient(linear, left top, right top, from($color-agba2), to($color-agba2)), url(../img/hero-2.jpeg);
+    background-image: linear-gradient(to right, $color-agba2, $color-agba2), url(../img/hero-2.jpeg);
+    background-position: center;
+    padding: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    position: relatiave;
+
+
+    @include responsive(62.5em) {
+        height: 90rem;
+    }
+
+    &__content {
+        grid-column: mid-start / mid-end;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        justify-self: center;
+        -ms-flex-item-align: center;
+        align-self: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        margin-bottom: 29rem;
+
+        @include responsive(62.5em) {
+            margin-bottom: 25vh;    
+        }
+    }
+
+    &__sub-heading {
+        padding: 3rem 10rem;
+        border-bottom: 1px solid $color-agba1;
+        border-top: 1px solid $color-agba1;
+        width: 80%;
+        line-height: 3rem;
+        text-align: center;
+
+        @include responsive(62.5em) {
+            width: 120%;
+        }
+    }
+
+}

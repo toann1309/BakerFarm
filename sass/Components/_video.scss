@@ -1,0 +1,66 @@
+/* video section */
+.video {
+    &-section {
+        grid-column: full-start / full-end;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/video-section.jpg);
+        background-position: bottom;
+        height: 70rem;
+        display: flex;
+        background-size: cover;
+        padding: 17rem;
+        background-attachment: fixed;
+
+        @include responsive(37.5em) {
+            background-attachment: scroll;
+        }
+    }
+
+    &-frame {
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 3rem 45rem;
+        border-bottom: 1px solid $color-agba1;
+        border-top: 1px solid $color-agba1;
+        position: relative;
+        margin: 0 auto;
+
+        @include responsive(62.5em) {
+            padding: 3rem 5rem;
+        }
+
+        @include responsive(37.5em) {
+            padding: 3rem 7rem;
+        }
+    }
+
+    &__btn {
+        padding: 1.5rem 3rem;
+        border-radius: 50%;
+        background-color: $color-primary;
+        font-size: 2.6rem;
+        position: absolute;
+        bottom: -3rem;
+
+        @include responsive(28.125em) {
+            padding: 0.8rem 1.5rem;
+            font-size: 1.5rem;
+            bottom: -2rem;
+        }
+    }
+}
+
+.video-frame h2 {
+    font-size: 4.5rem;
+}
+
+.video__btn i {
+    color: #007bff;
+    &:hover {
+        color: #0056b3;
+        text-decoration: none;
+    }
+}

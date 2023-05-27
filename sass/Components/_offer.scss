@@ -1,0 +1,16 @@
+.hotoffer-section {
+    grid-column: full-start / full-end;
+    height: 70rem;
+    background-image: linear-gradient(to right, $color-agba2, $color-agba2), url(../img/offer-1.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-attachment: fixed;
+
+    @include responsive(37.5em) {
+        background-attachment: scroll;
+    }
+}

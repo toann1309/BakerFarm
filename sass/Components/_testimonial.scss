@@ -1,0 +1,53 @@
+/* testimonial section */
+.testimonial {
+    &-section {
+        grid-column: full-start / full-end;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/wood-back.jpg);
+        height: 80rem;
+        display: flex;
+        justify-content: center;
+        background-size: cover;
+        background-position: center;
+    }
+
+    &__frame {
+        width: 72%;
+    }
+
+    &__frame,
+    &__box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__img {
+        border-radius: 50%;
+        height: 18rem;
+    }
+
+    &__quote {
+        color: #eee;
+        font-size: 1.7rem;
+        -webkit-transition: all 0.2s;
+        transition: all 0.2s;
+    }
+}
+
+.mgb {
+    margin-bottom: 8rem;
+}
+
+.testimonial__box i {
+    color: #bebebe;
+    font-size: 4rem;
+    transform: rotateY(180deg);
+    margin-left: -90rem;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.quote-white {
+    color: $color-primary !important;
+}

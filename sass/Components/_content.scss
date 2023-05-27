@@ -1,0 +1,45 @@
+.content {
+    &-section {
+        grid-column: mid-start / mid-end;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        width: 80%;
+        padding-bottom: 15rem;
+        margin: 3rem auto;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    &__heading {
+        display: block;
+    }
+
+    &-text {
+        color: $color-text;
+        font-size: 1.4rem;
+        font-family: $font-primary;
+        line-height: 1.6;
+        text-align: center;
+        width: 75%;
+        margin-bottom: 2rem;
+        &--upercase {
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            line-height: 1.8;
+        }
+        &--while {
+            color: $color-primary;
+        }
+    }
+}

@@ -1,0 +1,25 @@
+@import './Abstracts/variable';
+@import './Abstracts/mixin';
+
+@import './Base/base';
+@import './Base/typography';
+@import './Base/animations';
+
+@import './Components/contact';
+@import './Components/content';
+@import './Components/event';
+@import './Components/heading';
+@import './Components/learnmore';
+@import './Components/mainsection';
+@import './Components/menu';
+@import './Components/nav';
+@import './Components/notification';
+@import './Components/offer';
+@import './Components/product';
+@import './Components/testimonial';
+@import './Components/video';
+
+
+.active {
+    color: #e79d3c !important;
+}
